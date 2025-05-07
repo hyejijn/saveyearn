@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script>
+          jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
+  
+    </script>
+
 </head>
 <body>
 <header>
@@ -86,22 +96,22 @@
         <div class="row d-flex">
                 <div class="col-md-3 align-items-center">
                 <img src="assets/images/sec02_icon01.svg" alt="">
-                <p class="count">2894<span class="unit">마리</span></p>
+                <p class="count counter">2894<span class="unit">마리</span></p>
                 <p class="label">구조수</p>
             </div>
             <div class="col-md-3 align-items-center">
                 <img src="assets/images/sec02_icon02.svg" alt="">
-                <p class="count">137<span class="unit">마리</span></p>
+                <p class="counter count">137<span class="unit">마리</span></p>
                 <p class="label">보호중</p>
             </div>
             <div class="col-md-3 align-items-center">
                 <img src="assets/images/sec02_icon03.svg" alt="">
-                <p class="count">1804<span class="unit">마리</span></p>
+                <p class="counter count">1804<span class="unit">마리</span></p>
                 <p class="label">입양수</p>
             </div>
             <div class="col-md-3 align-items-center">
                 <img src="assets/images/sec02_icon04.svg" alt="">
-                <p class="count">168<span class="unit">마리</span></p>
+                <p class="count counter">168<span class="unit">마리</span></p>
                 <p class="label">임보수</p>   
             </div>
         </div>
@@ -335,12 +345,12 @@
 
 
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+<script src="assets/js/jquery.counterup.min.js"></script>
 <script src="assets/js/jquery.slim.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
-
-
 </body>
 </html>

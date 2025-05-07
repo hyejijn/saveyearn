@@ -12,4 +12,6 @@ const swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false
       },
   });
-  
+
+
+  // 카운트
