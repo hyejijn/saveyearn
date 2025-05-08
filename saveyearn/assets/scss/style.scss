@@ -136,11 +136,6 @@ body {
         }
 
     }
-    // .vline{
-    //     height: 37px;
-    //     width: 3px;
-    //     background-color: var(--primary-02);
-    // }
     .sec03_item{
         p{
             font-size: var(--font-heading-md);
@@ -152,8 +147,68 @@ body {
 .section_04{
     .swiper-slide{
         width: auto;
-        border: 1px solid #FED4B7;
+        border: 2px solid #FED4B7;
         border-radius: 6px;
+    }
+    .slide_text-box{
+        gap: 5px;
+        img{
+            width: 25px;
+            height: 25px;
+        }
+    .slide_name{
+        font-size: var(--font-body-md);
+        font-weight: 700;
+        }
+    }
+
+}
+
+
+.section_05{
+    h1{
+        margin-bottom: var(--spacing-md);
+    }
+    p{
+        font-size: var(--font-body-md);
+        font-weight: 300;
+    }
+    button{
+        margin-top: var(--spacing-sm);
+        width: 40%;
     }
 }
 
+.section_06{
+    .section06__main-title{
+        margin-bottom: var(--spacing-xl);
+    }
+    .img-fluid{
+        width: 100%;
+        height: 100%; 
+        object-fit: cover; 
+    }
+    .ratio-16x9 {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .ratio-4x3 {
+        aspect-ratio: 4 / 3;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+}
+
+.section_07{
+    background: #FEE7D7;
+    .form-control {
+        border: 1px solid var(--primary-01); 
+        background: transparent;
+        text-align: center;
+    }
+    .button_outline{
+    }
+}
