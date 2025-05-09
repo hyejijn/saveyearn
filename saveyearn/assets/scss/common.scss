@@ -24,7 +24,7 @@ body{
     --black-02: #4A4A4A;
 
     /* Point 색상 */
-    --primary-01:#FC7E27;
+    --primary-01:#123a5d;
     --primary-02:#FDA96F;
     --primary-03:#FED4B7;
     --primary-04:#FFF4ED;
@@ -51,7 +51,6 @@ body{
     h1{
         font-size: var(--font-heading-lg);
         font-weight: 200;
-        font-family: 'IBM Plex Sans KR', sans-serif;
     }
     span{
         color: var(--primary-01);

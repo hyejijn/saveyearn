@@ -123,41 +123,36 @@ body {
 }
 
 .section_03{
-    img{
-        margin-top: var(--spacing-lg);
-    }
-    .section_03-line{
-        &::after{
-            content: "";
-            display: block;
-            width: 783px;
-            height: 3px;
-            background-color: var(--primary-02);
-            margin: 0 auto;
-            margin-top: 70px;
+    .section__item{
+        border: 1px solid var(--primary-01);
+        border-image:linear-gradient(0deg, #FD6F7C 0%, #FDA96F 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        border-image-slice: 1;
+        
 
+        img{
+            width: 25%;
+            margin: var(--spacing-md) auto;
+        }
+        .section03__title{
+            font-size: var(--font-body-lg);
+            font-weight:var(--font-weight-Regular);
+            margin-bottom: var(--spacing-lg);
+        }
+        .section03__subtitle{
+            font-size: var(-font-body-sm);
+            font-weight:var(--font-weight-light);margin-bottom: var(--spacing-lg);
         }
 
-    }
-    .sec03_item{
-       
-        p{
-            font-size: var(--font-heading-md);
-            margin-top: 24px;
-            font-weight: 400;
+
+        &:hover{
+            border: none;
+             box-shadow: 5px 6px 20px var(--primary-03);
+             transform: translateY(-6px); 
         }
-
-        &::before{
-            content: "";
-            display: block;
-            width: 3px;
-            height: 37px;
-            background-color: var(--primary-02);
-            margin: 0 auto;
-            background-size: contain;
-
-        }
-
     }
 
 }
@@ -168,17 +163,18 @@ body {
     }
     .swiper-slide{
         width: auto;
-        border: 2px solid #FED4B7;
-        border-radius: 6px;
-        transition: all ease 1s;
+        border: 1px solid var(--primary-01);
+        transition: all ease 0.5s;
         
          &:hover{
             border-radius: 50px;
+            
             background-color: var(--primary-04);
 
             .img-fluid{
                 border-radius: 50px;
-                transition: all ease 1s;
+                transition: all ease 0.5s;
+        
             }
 
          }
@@ -210,6 +206,8 @@ body {
     button{
         margin-top: var(--spacing-sm);
         width: 40%;
+        font-size: var(--font-body-md);
+        
     }
 }
 

@@ -20,7 +20,7 @@ body {
   --black-01: #2E2E2E;
   --black-02: #4A4A4A;
   /* Point 색상 */
-  --primary-01:#FC7E27;
+  --primary-01:#123a5d;
   --primary-02:#FDA96F;
   --primary-03:#FED4B7;
   --primary-04:#FFF4ED;
@@ -43,7 +43,6 @@ body {
 :root h1 {
   font-size: var(--font-heading-lg);
   font-weight: 200;
-  font-family: "IBM Plex Sans KR", sans-serif;
 }
 :root span {
   color: var(--primary-01);
@@ -302,31 +301,33 @@ body h1 {
   margin-top: var(--spacing-sm);
 }
 
-.section_03 img {
-  margin-top: var(--spacing-lg);
+.section_03 .section__item {
+  border: 1px solid var(--primary-01);
+  border-image: linear-gradient(0deg, #FD6F7C 0%, #FDA96F 100%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-image-slice: 1;
 }
-.section_03 .section_03-line::after {
-  content: "";
-  display: block;
-  width: 783px;
-  height: 3px;
-  background-color: var(--primary-02);
-  margin: 0 auto;
-  margin-top: 70px;
+.section_03 .section__item img {
+  width: 25%;
+  margin: var(--spacing-md) auto;
 }
-.section_03 .sec03_item p {
-  font-size: var(--font-heading-md);
-  margin-top: 24px;
-  font-weight: 400;
+.section_03 .section__item .section03__title {
+  font-size: var(--font-body-lg);
+  font-weight: var(--font-weight-Regular);
+  margin-bottom: var(--spacing-lg);
 }
-.section_03 .sec03_item::before {
-  content: "";
-  display: block;
-  width: 3px;
-  height: 37px;
-  background-color: var(--primary-02);
-  margin: 0 auto;
-  background-size: contain;
+.section_03 .section__item .section03__subtitle {
+  font-size: var(-font-body-sm);
+  font-weight: var(--font-weight-light);
+  margin-bottom: var(--spacing-lg);
+}
+.section_03 .section__item:hover {
+  border: none;
+  box-shadow: 5px 6px 20px var(--primary-03);
+  transform: translateY(-6px);
 }
 
 .section_04 h1 {
@@ -334,9 +335,8 @@ body h1 {
 }
 .section_04 .swiper-slide {
   width: auto;
-  border: 2px solid #FED4B7;
-  border-radius: 6px;
-  transition: all ease 1s;
+  border: 1px solid var(--primary-01);
+  transition: all ease 0.5s;
 }
 .section_04 .swiper-slide:hover {
   border-radius: 50px;
@@ -344,7 +344,7 @@ body h1 {
 }
 .section_04 .swiper-slide:hover .img-fluid {
   border-radius: 50px;
-  transition: all ease 1s;
+  transition: all ease 0.5s;
 }
 .section_04 .slide_text-box {
   gap: 5px;
@@ -368,6 +368,7 @@ body h1 {
 .section_05 button {
   margin-top: var(--spacing-sm);
   width: 40%;
+  font-size: var(--font-body-md);
 }
 
 .section_06 .section06__main-title {
