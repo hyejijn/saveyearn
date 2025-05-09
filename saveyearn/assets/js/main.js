@@ -1,5 +1,10 @@
- // 슬라이드
-const swiper = new Swiper(".mySwiper", {
+
+
+
+// 슬라이드
+
+
+ const swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 30,
     freeMode: true,
@@ -15,11 +20,9 @@ const swiper = new Swiper(".mySwiper", {
   });
 
 
-  // 카운터
-
-
-
-  // 차트
+ 
+  
+// 차트
   document.addEventListener('DOMContentLoaded', function () {
     const ctx = document.getElementById('myChart').getContext('2d');
   
@@ -51,3 +54,5 @@ const swiper = new Swiper(".mySwiper", {
     new Chart(ctx, config);
 
   });
+
+

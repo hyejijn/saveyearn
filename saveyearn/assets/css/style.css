@@ -43,6 +43,7 @@ body {
 :root h1 {
   font-size: var(--font-heading-lg);
   font-weight: 200;
+  font-family: "IBM Plex Sans KR", sans-serif;
 }
 :root span {
   color: var(--primary-01);
@@ -194,8 +195,7 @@ body {
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
-
-.title-font {
+body h1 {
   font-family: "IBM Plex Sans KR", sans-serif;
 }
 
@@ -281,13 +281,13 @@ body {
 }
 .section_02 img {
   width: 20%;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-md);
 }
 .section_02 .col-md-3 {
   display: flex;
   flex-direction: column;
 }
-.section_02 .count {
+.section_02 .counter {
   font-size: var(--font-heading-xl);
   font-weight: 700;
 }
@@ -298,14 +298,17 @@ body {
 }
 .section_02 .label {
   font-size: var(--font-body-md);
-  font-weight: 300;
-  margin-top: 20px;
+  font-weight: 700;
+  margin-top: var(--spacing-sm);
 }
 
+.section_03 img {
+  margin-top: var(--spacing-lg);
+}
 .section_03 .section_03-line::after {
   content: "";
   display: block;
-  width: 70%;
+  width: 783px;
   height: 3px;
   background-color: var(--primary-02);
   margin: 0 auto;
@@ -316,14 +319,14 @@ body {
   margin-top: 24px;
   font-weight: 400;
 }
-.section_03 .sec03_item::after {
+.section_03 .sec03_item::before {
   content: "";
   display: block;
-  width: 3PX;
-  height: 37PX;
+  width: 3px;
+  height: 37px;
   background-color: var(--primary-02);
   margin: 0 auto;
-  top: 0;
+  background-size: contain;
 }
 
 .section_04 h1 {
@@ -333,6 +336,15 @@ body {
   width: auto;
   border: 2px solid #FED4B7;
   border-radius: 6px;
+  transition: all ease 1s;
+}
+.section_04 .swiper-slide:hover {
+  border-radius: 50px;
+  background-color: var(--primary-04);
+}
+.section_04 .swiper-slide:hover .img-fluid {
+  border-radius: 50px;
+  transition: all ease 1s;
 }
 .section_04 .slide_text-box {
   gap: 5px;

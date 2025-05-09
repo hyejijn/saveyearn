@@ -43,6 +43,7 @@ body {
 :root h1 {
   font-size: var(--font-heading-lg);
   font-weight: 200;
+  font-family: "IBM Plex Sans KR", sans-serif;
 }
 :root span {
   color: var(--primary-01);

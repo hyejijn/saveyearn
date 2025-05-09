@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+ <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
 <body>
@@ -86,25 +87,30 @@
         <div class="row d-flex">
             <div class="col-md-3 align-items-center">
                 <img src="assets/images/sec02_icon01.svg" alt="">
-                <div class="d-flex">
-                    <span id="count1" class="count">2894</span>
-                    <span class="unit">마리</span>
-                </div>   
+                <p  id="count2" class="">
+                    <span class="counter">2894</span>
+                    <span class="unit">마리</span></p>
                 <p class="label">구조수</p>
             </div>
             <div class="col-md-3 align-items-center">
                 <img src="assets/images/sec02_icon02.svg" alt="">
-                <p  id="count2" class="count">137<span class="unit">마리</span></p>
+                <p  id="count2" class="">
+                    <span class="counter">137</span>
+                    <span class="unit">마리</span></p>
                 <p class="label">보호중</p>
             </div>
             <div class="col-md-3 align-items-center">
                 <img src="assets/images/sec02_icon03.svg" alt="">
-                <p id="count3" class=" count">1804<span class="unit">마리</span></p>
+                <p id="count3">
+                    <span class="counter">1804</span>
+                    <span class="unit">마리</span></p>
                 <p class="label">입양수</p>
             </div>
             <div class="col-md-3 align-items-center">
                 <img src="assets/images/sec02_icon04.svg" alt="">
-                <p id="count4" class="count">168<span class="unit">마리</span></p>
+                <p id="count4" class="">
+                    <span class="counter">168</span>
+                    <span class="unit">마리</span></p>
                 <p class="label">임보수</p>   
             </div>
         </div>
@@ -140,7 +146,7 @@
     </div>
  </section>
 
-<!-- section_04 -->
+<!-- section_04 slide -->
  <section class="section_04">
     <div class="container">
         <div class="row">
@@ -230,7 +236,6 @@
                         </p>
                     </div>
                 </div>
-            <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -355,12 +360,22 @@
 
 
 
-
-<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    
+          $(document).ready(function () {
+            $('.counter').counterUp({
+                time: 500
+            });
+        });
+
+</script>
 <script src="assets/js/main.js"></script>
 
 </body>

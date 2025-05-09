@@ -5,11 +5,9 @@
 
 body {
     font-family: 'Noto Sans KR', sans-serif; 
-    
-}
-
-.title-font {
-    font-family: 'IBM Plex Sans KR', sans-serif;
+    h1{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+    }
 }
 
 .navbar{
@@ -100,15 +98,16 @@ body {
         background: var(--primary-04);
     img{
         width: 20%;
-        margin-bottom: 20px;
+        margin-bottom: var(--spacing-md);
     }
     .col-md-3{
         display: flex;
         flex-direction: column;
     }
-    .count{
+    .counter{
         font-size: var(--font-heading-xl);
         font-weight: 700;
+
     }
     .unit{
         color: var(--black-01);
@@ -117,18 +116,21 @@ body {
     }
     .label{
         font-size: var(--font-body-md);
-        font-weight: 300;
-        margin-top: 20px;
+        font-weight: 700;
+        margin-top: var(--spacing-sm);
     }
 
 }
 
 .section_03{
+    img{
+        margin-top: var(--spacing-lg);
+    }
     .section_03-line{
         &::after{
             content: "";
             display: block;
-            width: 70%;
+            width: 783px;
             height: 3px;
             background-color: var(--primary-02);
             margin: 0 auto;
@@ -138,23 +140,24 @@ body {
 
     }
     .sec03_item{
+       
         p{
             font-size: var(--font-heading-md);
             margin-top: 24px;
             font-weight: 400;
         }
 
-        &::after{
+        &::before{
             content: "";
             display: block;
-            
-            width: 3PX;
-            height: 37PX;
+            width: 3px;
+            height: 37px;
             background-color: var(--primary-02);
             margin: 0 auto;
-            top: 0;
+            background-size: contain;
 
         }
+
     }
 
 }
@@ -167,7 +170,21 @@ body {
         width: auto;
         border: 2px solid #FED4B7;
         border-radius: 6px;
+        transition: all ease 1s;
+        
+         &:hover{
+            border-radius: 50px;
+            background-color: var(--primary-04);
+
+            .img-fluid{
+                border-radius: 50px;
+                transition: all ease 1s;
+            }
+
+         }
     }
+  
+
     .slide_text-box{
         gap: 5px;
         img{
@@ -179,7 +196,6 @@ body {
         font-weight: 700;
         }
     }
-
 }
 
 
