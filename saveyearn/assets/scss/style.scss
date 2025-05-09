@@ -97,6 +97,7 @@ body {
 }
 
 .section_02{
+        background: var(--primary-04);
     img{
         width: 20%;
         margin-bottom: 20px;
@@ -142,9 +143,26 @@ body {
             margin-top: 24px;
             font-weight: 400;
         }
+
+        &::after{
+            content: "";
+            display: block;
+            
+            width: 3PX;
+            height: 37PX;
+            background-color: var(--primary-02);
+            margin: 0 auto;
+            top: 0;
+
+        }
     }
+
 }
+
 .section_04{
+    h1{
+        font-size: 30px;
+    }
     .swiper-slide{
         width: auto;
         border: 2px solid #FED4B7;
@@ -208,7 +226,21 @@ body {
         border: 1px solid var(--primary-01); 
         background: transparent;
         text-align: center;
+        margin-top: 20px;
+        height: 50px
     }
-    .button_outline{
+}
+
+footer{
+    .footer__logo{
+        margin-bottom: var(--spacing-lg);
+    }
+    .footer__icon{
+        margin-bottom: var(--spacing-xl);
+        gap: 5%;
+        font-size: var(--font-body-md);
+    }
+    .footer__text{
+        gap: 5%;
     }
 }

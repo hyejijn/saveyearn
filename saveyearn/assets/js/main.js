@@ -1,3 +1,4 @@
+ // 슬라이드
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 30,
@@ -14,20 +15,7 @@ const swiper = new Swiper(".mySwiper", {
   });
 
 
-  // 카운트
-{/* <script>
-  var ids = ['count1', 'count2', 'count3', 'count4'];
-  var nums = [2894, 137, 1804, 168];
-
-  ids.forEach(function(id, i) {
-    var counter = new CountUp(id, nums[i], { duration: 2 });
-    if (!counter.error) {
-      counter.start();
-    } else {
-      console.error(counter.error);
-    }
-  });
-</script> */}
+  // 카운터
 
 
 

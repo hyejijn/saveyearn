@@ -9,16 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script>
-          jQuery(document).ready(function($) {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-});
-  
-    </script>
-
 </head>
 <body>
 <header>
@@ -94,9 +84,12 @@
  <section class="section_02">
     <div class="container">
         <div class="row d-flex">
-                <div class="col-md-3 align-items-center">
+            <div class="col-md-3 align-items-center">
                 <img src="assets/images/sec02_icon01.svg" alt="">
-                <p id="count1" class="count">2894<span class="unit">마리</span></p>
+                <div class="d-flex">
+                    <span id="count1" class="count">2894</span>
+                    <span class="unit">마리</span>
+                </div>   
                 <p class="label">구조수</p>
             </div>
             <div class="col-md-3 align-items-center">
@@ -334,13 +327,13 @@
 </section>    
 
 <!-- footer -->
-<!-- <footer class="bg-dark text-white py-4">
+<footer class="bg-dark text-white py-4">
     <div class="container">
       <div class="text-center align-items-center">
-        <div>
-            <img src="" alt="">
+        <div class="footer__logo">
+            <img src="assets/images/footer_logo.svg" alt="">
         </div>
-        <div>
+        <div class="footer__icon d-flex justify-content-center">
          <a href="#"><i class="fab fa-youtube text-white mx-1"></i></a>
          <a href="#"><i class="fab fa-instagram text-white mx-1"></i></a>
          <a href="#"><i class="fab fa-x-twitter text-white mx-1"></i></a>
@@ -348,7 +341,7 @@
          <a href="#"><i class="fab fa-google-play text-white mx-1"></i></a>
         </div>
     
-        <div>
+        <div class="footer__text d-flex justify-content-center">
             <div class="mb-2">대표: 최혜진</div>
             <div class="mb-2">이메일: gwsr579144@gmail.com</div>
             <div class="mb-2">사업자 등록번호: 150-19-01029</div>
@@ -356,7 +349,7 @@
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
 
 
@@ -365,10 +358,10 @@
 
 <script src="assets/js/jquery.slim.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.6.2/countUp.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="assets/js/main.js"></script>
+
 </body>
 </html>
