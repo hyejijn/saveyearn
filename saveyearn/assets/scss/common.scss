@@ -30,8 +30,8 @@ body{
     --primary-04:#FFF4ED;
 
     /* font-weight */
-    --font-weight-Exlight:200;
-    --font-weight-light:300;
+    --font-weight-Exlight:300;
+    --font-weight-light:400;
     --font-weight-Regular:400;
     --font-weight-seBold:600;
     --font-weight-Bold:700;
@@ -50,7 +50,7 @@ body{
 
     h1{
         font-size: var(--font-heading-lg);
-        font-weight: 200;
+        font-weight: var(--font-weight-Regular);
     }
     span{
         color: var(--primary-01);
