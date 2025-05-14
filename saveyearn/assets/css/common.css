@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 body {
   font-size: 14px;
-  line-height: 130% !important;
   letter-spacing: 0px;
 }
 
@@ -25,6 +24,7 @@ body {
   --primary-03:#FED4B7;
   --primary-04:#FFF4ED;
   /* font-weight */
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -39,15 +39,15 @@ body {
   --font-caption: 0.9286rem;
 }
 :root h1 {
-  font-size: var(--font-heading-lg);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-heading-xl);
+  font-weight: var(--font-weight-regular);
 }
 :root span {
   color: var(--primary-01);
   font-weight: var(--font-weight-regular);
 }
 :root p {
-  font-size: var(--font-body-md);
+  font-size: var(--font-caption);
   font-weight: var(--font-weight-regular);
 }
 :root .container {

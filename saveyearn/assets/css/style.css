@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
 body {
   font-size: 14px;
-  line-height: 130% !important;
   letter-spacing: 0px;
 }
 
@@ -25,6 +24,7 @@ body {
   --primary-03:#FED4B7;
   --primary-04:#FFF4ED;
   /* font-weight */
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -39,15 +39,15 @@ body {
   --font-caption: 0.9286rem;
 }
 :root h1 {
-  font-size: var(--font-heading-lg);
-  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-heading-xl);
+  font-weight: var(--font-weight-regular);
 }
 :root span {
   color: var(--primary-01);
   font-weight: var(--font-weight-regular);
 }
 :root p {
-  font-size: var(--font-body-md);
+  font-size: var(--font-caption);
   font-weight: var(--font-weight-regular);
 }
 :root .container {
@@ -202,15 +202,12 @@ body h1 {
 
 .navbar {
   flex-wrap: nowrap !important;
-  margin-top: 52px;
+  padding-bottom: 0 !important;
 }
 .navbar .navbar_sign_in {
   background: #F2600C;
   border: none;
   border-radius: 6px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 130%;
   color: #FFF8F4;
   padding: 12px 24px;
 }
@@ -223,14 +220,11 @@ body h1 {
 
 .navbar__menu {
   gap: 50px;
-  align-items: center;
-  justify-content: center;
 }
 .navbar__menu li {
   list-style: none;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 130%;
+  font-size: var(--font-body-sm);
+  font-weight: var(--font-weight-semibold);
 }
 .navbar__menu a {
   color: #2e2e2e;
@@ -241,7 +235,7 @@ body h1 {
   border: none;
   border-radius: 6px;
   padding: 5px 20px;
-  margin-left: 0;
+  margin-left: 190px;
 }
 .navbar_signin .signin_text {
   display: block;
@@ -255,13 +249,8 @@ body h1 {
 .section_01 .sec_01_maintitle .main_img {
   width: 100%;
 }
-.section_01 .sec_01_maintitle h1 {
-  font-size: var(--font-heading-xxl);
-  font-weight: var(--font-weight-Exlight);
-}
 .section_01 .sec_01_maintitle span {
   font-size: var(--font-heading-xxl);
-  font-weight: var(--font-weight-seBold);
 }
 .section_01 .sec_01_maintitle .cta {
   margin-top: 108px;
@@ -342,7 +331,7 @@ body h1 {
   height: 40px;
   background-color: var(--primary-02);
   position: relative;
-  top: -382px;
+  top: -416px;
 }
 .section_03 .section03__sbutitle {
   font-size: var(--font-body-lg);
@@ -418,7 +407,7 @@ footer .footer__logo {
   margin-bottom: var(--spacing-lg);
 }
 footer .footer__icon {
-  margin-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
   gap: 5%;
   font-size: var(--font-body-md);
 }
