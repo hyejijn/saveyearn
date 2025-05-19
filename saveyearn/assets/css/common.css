@@ -56,10 +56,9 @@ body {
 
 .button {
   position: relative;
-  padding: var(--spacing-sm) var(--spacing-lg);
+  padding: var(--spacing-xs) var(--spacing-sm);
   background-color: var(--primary-01);
   font-size: var(--font-caption);
-  font-weight: var(--font-weight-semibold);
   color: #FFFFFF;
   border-radius: 6px;
   border: 1px solid var(--primary-01);
@@ -70,7 +69,7 @@ body {
 }
 
 .button_outline {
-  padding: var(--spacing-sm) var(--spacing-lg);
+  padding: var(--spacing-xs) var(--spacing-sm);
   background: transparent;
   border: 1px solid var(--primary-01);
   color: var(--primary-01);

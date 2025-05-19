@@ -1,6 +1,6 @@
 
 @import 'common';
-@import 'responsive';
+
 
 
 body {
@@ -53,12 +53,13 @@ body {
     .signin_text{
         display: block;
         color: #FFF8F4;
-        font-size: 14px;
+        font-size: var(--font-body-sm);
     }
     .signin_icon{
          display: none;
     }
 }
+
 
 // nav
 
@@ -72,12 +73,10 @@ body {
             font-size: var(--font-heading-xxl);
         }
         .cta{
-            margin-top: 108px;
+            padding-top: var(--spacing-md);
             gap:53px
         }
-        button{
-            font-size: var(--font-body-md);
-        }
+
         // .arrow{
         //     margin-left: 8px;
         // }
@@ -280,3 +279,5 @@ footer{
         gap: 5%;
     }
 }
+
+@import 'responsive';
