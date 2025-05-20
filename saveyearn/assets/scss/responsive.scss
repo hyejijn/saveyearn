@@ -1,12 +1,31 @@
 @media (max-width: 1199px) {
+    .section_03{
+        .section__items{
+            &::before{
+                display: none;
+            }
+        }
+        .section03__icon{
+            display: none;
+        }
+        
+        .section03__item{
+                &::after{
+            display: none;
+        }
+        }
 
+        }
+
+  
 
 } 
+
 @media (max-width: 1143px) {
     :root{
-        --font-heading-xxl: 35px;
-        --font-heading-xl: 28px
-        --font-caption:15px;  
+        --font-heading-xxl: 40px;
+        --font-heading-xl: 36px;
+        // --font-caption:15px;  
     }
     .container{
        width: 743px;
@@ -45,6 +64,9 @@
 }
 
 }
+// section_02
+
+
 
 }
     
@@ -52,6 +74,7 @@
 
 
 @media (max-width: 906px) {
+
     .container{
         max-width: 906px;
     }
@@ -74,6 +97,12 @@
 }
 
 @media (max-width: 806px) {
+            :root{
+        --font-heading-xxl: 35px;
+        --font-heading-xl: 30px;
+        // --font-caption:15px;  
+    }
+
     .container{
         max-width: 607px;
     }
@@ -128,16 +157,43 @@
     }
 
 // section_01
-.section_01{   
-     .sec_01_maintitle{
-        .main_img{
-            width: 50%;
+.section_01 {
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .section01_mainimg{
+           background-color: aqua;
+            width: 80%;
+            height: 300px;
+            background: url(../images/re_main.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        .cta{
-            padding-top: 30px;
-            gap:53px
+        .sec_01_maintitle{
+            margin-top: var(--spacing-md);
+            .unit{
+                font-weight: var(--font-weight-semibold);
+            }
         }
+    }
+    .cta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    img.img-fluid {
+        display: none;
+    }
+
 }
+
+.section_02{
+
 }
 }
 
@@ -179,10 +235,6 @@
      }
 
 }
-
-
-
-
 
 @media (max-width: 337px) {
     .navbar_top{
