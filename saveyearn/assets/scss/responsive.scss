@@ -1,25 +1,4 @@
-@media (max-width: 1199px) {
-    .section_03{
-        .section__items{
-            &::before{
-                display: none;
-            }
-        }
-        .section03__icon{
-            display: none;
-        }
-        
-        .section03__item{
-                &::after{
-            display: none;
-        }
-        }
 
-        }
-
-  
-
-} 
 
 @media (max-width: 1143px) {
     :root{

@@ -1,6 +1,5 @@
 
 @import 'common';
-@import 'responsive';
 
 
 
@@ -276,4 +275,32 @@ footer{
         gap: 5%;
     }
 }
+
+
+
+
+
+@media (max-width: 1199px) {
+    .section_03{
+    
+        .section__items{
+            &::before{
+                width: 0;
+                height: 0;
+            }
+        }
+        .section03__icon{
+            display: none;
+        }
+        
+        .section03__item{
+                &::after{
+                width: 0 !important;
+                height: 0 !important;
+        }
+        }
+
+        }
+} 
+
 
