@@ -300,6 +300,7 @@ footer .footer__text {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media (max-width: 1199px) {
   .section_03 .section__items::before {
     width: 0;
@@ -318,11 +319,16 @@ footer .footer__text {
     --font-heading-xxl: 40px;
     --font-heading-xl: 36px;
 =======
+=======
+>>>>>>> parent of 8d9b2f7 (0519)
 @media (max-width: 1143px) {
   :root {
     --font-heading-xl: 25px;
     --font-heading-xxl: 32px;
     --font-caption:15px;
+<<<<<<< HEAD
+>>>>>>> parent of 8d9b2f7 (0519)
+=======
 >>>>>>> parent of 8d9b2f7 (0519)
   }
   .container {
@@ -371,10 +377,13 @@ footer .footer__text {
 }
 @media (max-width: 806px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   :root {
     --font-heading-xxl: 35px;
     --font-heading-xl: 30px;
   }
+=======
+>>>>>>> parent of 8d9b2f7 (0519)
 =======
 >>>>>>> parent of 8d9b2f7 (0519)
   .container {
@@ -407,6 +416,7 @@ footer .footer__text {
     display: block;
   }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 @media (max-width: 767px) {
   :root {
@@ -444,6 +454,8 @@ footer .footer__text {
     display: none;
   }
 }
+=======
+>>>>>>> parent of 8d9b2f7 (0519)
 =======
 >>>>>>> parent of 8d9b2f7 (0519)
 @media (max-width: 457px) {
