@@ -1,0 +1,112 @@
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+body{
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+:root {
+
+    /* Spacing (Margin & Padding) */
+    --spacing-xxs: 10px;
+    --spacing-xs: 12px;
+    --spacing-sm: 16px;
+    --spacing-md: 25px;
+    --spacing-lg: 48px;
+    --spacing-xl:  80px;
+    --spacing-xxl: 160px;
+
+    /* black 색상 */
+    --black-01: #2E2E2E;
+    --black-02: #4A4A4A;
+
+    /* Point 색상 */
+    --primary-01:#FC7E27;
+    --primary-02:#FDA96F;
+    --primary-03:#FED4B7;
+    --primary-04:#FFF4ED;
+
+    /* font-weight */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;   
+    --font-weight-semibold: 600; 
+    --font-weight-bold: 700; 
+
+     /* font-size */
+    --font-heading-xxl: 3.4286rem; // 48px
+    --font-heading-xl: 2.7143rem;  // 38px
+    --font-heading-lg: 2.2857rem;  // 32px
+    --font-heading-md: 1.5714rem;  // 22px
+  
+    --font-body-lg: 1.4286rem;     // 20px
+    --font-body-md: 1.2857rem;     // 18px
+    --font-body-sm: 1.0714rem;     // 15px
+  
+    --font-caption: 0.9286rem;     // 13px
+
+    h1{
+        font-size: var(--font-heading-xl);
+        font-weight: var(--font-weight-regular);
+    }
+    span{
+        color: var(--primary-01);
+        font-weight: var(--font-weight-regular);
+    }
+    p{
+        font-size: var(--font-caption);
+        font-weight: var(--font-weight-regular);
+    }
+    .container{
+        padding: 80px 0;
+    }
+}
+
+
+
+.button{ 
+    position: relative;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--primary-01);
+    font-size: var(--font-caption);
+    color: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid var(--primary-01);
+
+    // &::after{
+    //     content: '';
+    //     width: 1rem;
+    //     height: 1rem;
+    //     position: absolute;
+    //     top: 50%;
+    //     // right: var(--spacing-lg);
+    //     transform: translateY(-50%);
+    //     background-image: url('/assets/images/Arrow-right-white.png');
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    // }
+
+    &:hover{
+        background-color: transparent;
+        color: var(--primary-01); 
+    }
+
+    // &:hover::after{
+    //     background-image: url('/assets/images/Arrow-right-orange.png');
+    // }
+
+}
+.button_outline{
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: transparent;
+    border: 1px solid var(--primary-01);
+    color: var(--primary-01);
+    border-radius: 6px;
+
+    &:hover{
+        background-color: var(--primary-01);
+        color:  #FFFFFF;
+        ;
+    }
+}
