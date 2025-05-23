@@ -115,7 +115,6 @@ body {
     .section__main-title{
      margin-bottom: var(--spacing-xl);
     }
-    //가로선
     .section__items{
         &::before{
             content: "";
@@ -134,7 +133,12 @@ body {
         align-items: center;
         justify-content: center; 
         
-        //비숑이미지
+        .ratio-4x3 {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+      }
         .section03__icon{
             width: 30px;
             height: 30px;
@@ -144,14 +148,12 @@ body {
             background-position: center;
             z-index: 99;
             position: absolute;
-            top: 105px;
+            top: 40px;
         }
        .section03__card{
-            width: 80%;
-            border-radius: 20px;
-            margin-top: 166px;
+            width: 100%;
+            margin-top: 98px;
         }
-        // 세로선
          &::after{
             content: "";
             display: block;
@@ -159,20 +161,22 @@ body {
             height: 40px;
             background-color:var(--primary-02);
             position: relative;
-            top: -476px;
-             }
-    
+            top: -416px;
+        }
     }
-        .section03__sbutitle{
+    .section03__sbutitle{
         font-size: var(--font-body-lg);
         font-weight:var(--font-weight-semibold);
         margin-top: var(--spacing-lg);
     }
+    // .section03__subtitle{
+    //     font-size: var(-font-body-sm);
+    //     font-weight:var(--font-weight-Regular);
+    //     margin-bottom: var(--spacing-lg);
+    // }
+
+
 }
-
-
-
-
 
 
 
@@ -276,6 +280,7 @@ footer{
     }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -304,3 +309,6 @@ footer{
 } 
 
 
+=======
+@import 'responsive';
+>>>>>>> parent of 8d9b2f7 (0519)

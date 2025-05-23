@@ -187,6 +187,12 @@ body h1 {
   align-items: center;
   justify-content: center;
 }
+.section_03 .section__item .ratio-4x3 {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 .section_03 .section__item .section03__icon {
   width: 30px;
   height: 30px;
@@ -196,12 +202,11 @@ body h1 {
   background-position: center;
   z-index: 99;
   position: absolute;
-  top: 105px;
+  top: 40px;
 }
 .section_03 .section__item .section03__card {
-  width: 80%;
-  border-radius: 20px;
-  margin-top: 166px;
+  width: 100%;
+  margin-top: 98px;
 }
 .section_03 .section__item::after {
   content: "";
@@ -210,7 +215,7 @@ body h1 {
   height: 40px;
   background-color: var(--primary-02);
   position: relative;
-  top: -476px;
+  top: -416px;
 }
 .section_03 .section03__sbutitle {
   font-size: var(--font-body-lg);
@@ -294,6 +299,7 @@ footer .footer__text {
   gap: 5%;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1199px) {
   .section_03 .section__items::before {
     width: 0;
@@ -311,6 +317,13 @@ footer .footer__text {
   :root {
     --font-heading-xxl: 40px;
     --font-heading-xl: 36px;
+=======
+@media (max-width: 1143px) {
+  :root {
+    --font-heading-xl: 25px;
+    --font-heading-xxl: 32px;
+    --font-caption:15px;
+>>>>>>> parent of 8d9b2f7 (0519)
   }
   .container {
     width: 743px;
@@ -357,10 +370,13 @@ footer .footer__text {
   }
 }
 @media (max-width: 806px) {
+<<<<<<< HEAD
   :root {
     --font-heading-xxl: 35px;
     --font-heading-xl: 30px;
   }
+=======
+>>>>>>> parent of 8d9b2f7 (0519)
   .container {
     max-width: 607px;
   }
@@ -391,6 +407,7 @@ footer .footer__text {
     display: block;
   }
 }
+<<<<<<< HEAD
 @media (max-width: 767px) {
   :root {
     --font-heading-xxl: 30px;
@@ -427,6 +444,8 @@ footer .footer__text {
     display: none;
   }
 }
+=======
+>>>>>>> parent of 8d9b2f7 (0519)
 @media (max-width: 457px) {
   .container {
     max-width: 393px;
