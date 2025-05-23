@@ -1,0 +1,135 @@
+@media (max-width: 1143px) {
+  :root {
+    --font-heading-xxl: 35px;
+    --font-heading-xl: 28px
+    --font-caption:15px;
+  }
+  .container {
+    width: 743px;
+  }
+  .container .navbar {
+    margin-top: 42px;
+  }
+  .container .navbar .navbar_sign_in {
+    padding: 7px 20px;
+  }
+  .container .navbar .navbar_sign_in .signin_text {
+    font-size: 10px;
+  }
+  .container .navbar .navbar__menu {
+    gap: 10px;
+  }
+  .container .navbar .navbar__menu .nav__link {
+    font-size: 10px;
+  }
+  .section_01 .sec_01_maintitle .main_img {
+    width: 80%;
+  }
+  .section_01 .sec_01_maintitle .cta {
+    padding-top: 30px;
+    gap: 53px;
+  }
+}
+@media (max-width: 906px) {
+  .container {
+    max-width: 906px;
+  }
+  .navbar {
+    margin-top: 42px;
+  }
+  .navbar .logo {
+    width: 80%;
+  }
+  .navbar .navbar_sign_in {
+    padding: 7px 20px;
+  }
+  .navbar__menu {
+    padding-left: 0;
+    gap: 30px;
+  }
+}
+@media (max-width: 806px) {
+  .container {
+    max-width: 607px;
+  }
+  .navbar__menu {
+    gap: 25px;
+  }
+}
+@media (max-width: 791px) {
+  .navbar_top {
+    gap: 73px;
+  }
+  .navbar_top .navbar__ghost {
+    background: none;
+    border: none;
+    display: block;
+  }
+  .navbar__menu li {
+    display: none;
+  }
+  .navbar_signin {
+    background-color: transparent;
+    margin-left: 0 !important;
+  }
+  .navbar_signin .signin_text {
+    display: none;
+  }
+  .navbar_signin .signin_icon {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --font-heading-xxl: 30px;
+    --font-heading-xl: 20px;
+    --font-caption: 12px;
+  }
+  .section_01 .sec_01_maintitle .main_img {
+    width: 50%;
+  }
+  .section_01 .sec_01_maintitle .cta {
+    padding-top: 30px;
+    gap: 53px;
+  }
+}
+@media (max-width: 457px) {
+  .container {
+    max-width: 393px;
+  }
+  .navbar_top {
+    gap: 65px;
+  }
+  .navbar_top .navbar__logo {
+    width: 65%;
+  }
+  .navbar_signin {
+    padding: 0;
+  }
+}
+@media (max-width: 402px) {
+  .container {
+    max-width: 333px;
+  }
+  .navbar_top {
+    justify-content: space-around;
+    gap: 0;
+  }
+  .navbar_top .logo {
+    width: 75%;
+  }
+  .navbar_top .navbar__logo {
+    width: 55%;
+  }
+  .navbar_signin .signin_icon {
+    width: 70%;
+  }
+}
+@media (max-width: 337px) {
+  .navbar_top {
+    gap: 20px;
+  }
+  .navbar_top .ghost_btn {
+    width: 65%;
+  }
+}/*# sourceMappingURL=responsive.css.map */
